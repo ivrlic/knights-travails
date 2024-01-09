@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+
+*{
+  margin: 0;
+}
+
+body {
+  /* margin: 0; */
+  background-color: rgba(73, 109, 0, 0.487);
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+/* HEADER */
+header h1 {
+  margin-bottom: 1.5rem;
+  letter-spacing: 5px;
+  text-decoration: overline;
+  line-height: 1.6;
+  color: rgba(245, 245, 245, 0.66)
+}
+
+header hr {
+  color: rgba(203, 191, 16, 0.608);
+}
+
+header p {
+  letter-spacing: 2px;
+}
+
+header {
+  text-align: center;
+  background-color: rgba(43, 29, 29, 0.916);
+  color: rgba(203, 191, 16, 0.608);
+  padding: 2rem 4rem;
+  border-bottom: 2px solid rgba(49, 33, 33, 0.916);
+  ;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background-color: rgba(43, 29, 29, 0.916);
+  color: rgba(203, 191, 16, 0.608);
+  padding: 0.3rem 0 0.6rem;
+}
+
+
+/* INFO CONTAINER */
+.info-cont {
+  position: relative;
+  margin: 1rem auto 0;
+  padding: 0.5rem 1rem;
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(245, 245, 245, 0.66);
+  color: rgba(43, 29, 29, 0.916);
+  font-weight: bold;
+  border-right: 2px solid rgba(32, 22, 22, 0.916);
+  border-radius: 10px 10px 0 0;
+}
+
+.info-cont p:last-of-type {
+  position: absolute;
+  left: 65%;
+}
+
+/* TABLE - CHESSSBOARD */
+.table-cont {
+  margin: 0 auto 3.5rem;
+  position: relative;
+  width: 450px;
+  background-color: rgba(43, 29, 29, 0.916);
+  border-bottom: 4px solid rgba(49, 33, 33, 0.916);
+  border-right: 4px solid rgba(49, 33, 33, 0.916);
+  border-radius: 20px;
+}
+
+.small-table-cont {
+  margin: 0 auto;
+  width: fit-content;
+  border-left: 2px solid rgba(32, 22, 22, 0.916);
+  border-top: 2px solid rgba(32, 22, 22, 0.916);
+  border-bottom: 1px solid rgba(245, 245, 245, 0.66);
+  border-right: 1px solid rgba(245, 245, 245, 0.66);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.chessboard {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+/* info position row and columns */
+.top-row,
+.bottom-row,
+.left-column,
+.right-column {
+  margin: 0 auto;
+  color: rgba(203, 191, 16, 0.608);
+}
+
+.left-column,
+.right-column {
+  position: absolute;
+  top: 55px;
+}
+
+.left-column {
+  left: 20px;
+}
+
+.right-column {
+  right: 20px;
+}
+
+.left-column tr,
+.right-column tr {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.left-column .out-square,
+.left-column .out-square,
+.right-column .out-square,
+.right-column .out-square {
+  height: 41px;
+  width: 10px;
+}
+
+.out-square {
+  height: 40px;
+  width: 39px;
+  text-align: center;
+}
+
+/* chessboard squares */
+.square {
+  height: 40px;
+  width: 40px;
+  border: 1px solid rgb(100, 100, 120);
+  border: 1px solid rgba(73, 109, 0, 0.487);
+  background-color: rgba(245, 245, 245, 0.92);
+  text-align: center;
+  cursor: pointer;
+}
+
+.square:hover,
+.square:focus {
+  background-color: rgba(141, 141, 0, 0.18) !important;
+}
+
+.rows:nth-child(odd) .square:nth-child(even) {
+  background-color: rgba(73, 109, 0, 0.487);
+}
+
+.rows:nth-child(even) .square:nth-child(odd) {
+  background-color: rgba(73, 109, 0, 0.487);
+}
+
+/* chess piece img */
+.piece {
+  width: 26px;
+}
+
+/* marked squares - path from start to end position*/
+.marked-square {
+  background-color: rgb(141, 141, 0) !important;
+  position: relative;
+}
+
+.marked-square p {
+  position: absolute;
+  top: 0;
+  left: 2px;
+  font-size: 0.875rem;
+  color: rgba(43, 29, 29, 0.916);
+}

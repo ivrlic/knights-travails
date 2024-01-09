@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Knight's Travails</title>
+</head>
+
+<body>
+  <header>
+    <h1>KNIGHT'S TRAVAILS</h1>
+    <hr>
+    <p>Choose start square. Choose end square. The fastest knight's path will be shown. Do it again.</p>
+  </header>
+
+  <div class="info-cont">
+    <p>Start Square: <span id="startSquare"></span></p>
+    <p>End Square: <span id="endSquare"></span></p>
+  </div>
+    
+  <div class="table-cont">
+    <table class="top-row" id="top-row"></table>
+    
+    <div class="small-table-cont">
+      <table id="chessboard" class="chessboard"></table>
+    </div>
+
+    <table class="bottom-row" id="bottom-row"></table>
+    <table class="left-column" id="left-column"></table>
+    <table class="right-column" id="right-column"></table> 
+  </div>
+
+  <footer>
+    <p>made by ivrlic 2023</p>
+  </footer>
+
+  <script src="./modules/index.js" type="module"></script>
+</body>
+
+</html>
